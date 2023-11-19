@@ -1,4 +1,6 @@
 ﻿using CORE.Entities;
+using CORE.Interfaces;
+using INFRASTRUCTURE;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -6,11 +8,17 @@ namespace API.Controllers
   
     public class ProductsController : BaseApiController
     {
+        private readonly IProductRepository _prodRepo;
+        public ProductsController(IProductRepository prodRepo)
+        {
+           _prodRepo= prodRepo;
+        }
 
         [HttpGet]
-        public string GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            return "this is a list of products";
+           var product = await _prodRepo.GetProducts();
+            return Ok(product); 
         }
 
         [HttpGet("{id}")]
@@ -19,5 +27,13 @@ namespace API.Controllers
         {
             return "this will be a product number " + id;
         }
+
+        [HttpGet("categories")]
+        public async Task<ActionResult<IReadOnlyList<Category>>> GetCategory()
+        {
+            return Ok(await _prodRepo.GetCategoriesAsync());
+        }
+
+       
     }
 }

@@ -5,10 +5,9 @@ namespace CORE.Interfaces
 {
     public interface IProductRepository 
     {
-        public IReadOnlyList<Product> GetProduct();
-        public IReadOnlyList<Category> GetProductsCategories();
+        Task<IReadOnlyList<Product>> GetProducts();
+        Task<IReadOnlyList<Category>> GetCategoriesAsync();
 
-        public IReadOnlyList<Type> GetProductsTypes();
 
     }
 }

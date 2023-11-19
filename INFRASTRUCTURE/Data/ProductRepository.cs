@@ -1,5 +1,6 @@
 ﻿using CORE.Entities;
 using CORE.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,19 +18,16 @@ namespace INFRASTRUCTURE.Data
             _context = context;
         }
 
-        public IReadOnlyList<Product> GetProduct()
+        public async Task<IReadOnlyList<Product>> GetProducts()
         {
-            throw new NotImplementedException();
+            return await _context.Products.Include(x => x.Category).ToListAsync();
+        }
+     
+        public async Task<IReadOnlyList<Category>> GetCategoriesAsync()
+        {
+            return await _context.Categories.ToListAsync();
         }
 
-        public IReadOnlyList<Category> GetProductsCategories()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IReadOnlyList<Type> GetProductsTypes()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

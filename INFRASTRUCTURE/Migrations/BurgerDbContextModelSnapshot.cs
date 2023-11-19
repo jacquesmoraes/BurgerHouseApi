@@ -39,6 +39,9 @@ namespace INFRASTRUCTURE.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
@@ -51,52 +54,22 @@ namespace INFRASTRUCTURE.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ProductCategoryId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ProductTypeId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductCategoryId");
-
-                    b.HasIndex("ProductTypeId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("CORE.Entities.ProductType", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ProductTypeName")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProductType");
-                });
-
             modelBuilder.Entity("CORE.Entities.Product", b =>
                 {
-                    b.HasOne("CORE.Entities.Category", "ProductCategory")
+                    b.HasOne("CORE.Entities.Category", "Category")
                         .WithMany("Products")
-                        .HasForeignKey("ProductCategoryId")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CORE.Entities.ProductType", "ProductType")
-                        .WithMany()
-                        .HasForeignKey("ProductTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ProductCategory");
-
-                    b.Navigation("ProductType");
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("CORE.Entities.Category", b =>

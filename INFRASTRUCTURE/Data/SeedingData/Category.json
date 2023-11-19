@@ -1,0 +1,27 @@
+[
+  {
+    "Id": 1,
+    "Name": "burgers"
+    
+  },
+  {
+    "Id": 2,
+    "Name": "pizzas"
+  },
+  {
+    "Id": 3,
+    "Name": "hot dogs"
+  },
+  {
+    "Id": 4,
+    "Name": "beverages"
+  },
+  {
+    "Id": 5,
+    "Name": "appetizers"
+  },
+  {
+    "Id": 6,
+    "Name": "dessert"
+  }
+]
