@@ -1,27 +1,32 @@
 [
   {
-    "Id": 1,
-    "Name": "burgers"
     
+    "CategoryName": "burgers",
+    "Description": "very taste burgers"
   },
   {
-    "Id": 2,
-    "Name": "pizzas"
+    
+    "CategoryName": "pizzas",
+    "Description": "uhul pizza"
   },
   {
-    "Id": 3,
-    "Name": "hot dogs"
+    
+    "CategoryName": "hot dogs",
+    "Description": "big sausages hehe"
   },
   {
-    "Id": 4,
-    "Name": "beverages"
+    
+    "CategoryName": "beverages",
+    "Description": "cold and refreshing"
   },
   {
-    "Id": 5,
-    "Name": "appetizers"
+    
+    "CategoryName": "appetizers",
+    "Description": "yes, please"
   },
   {
-    "Id": 6,
-    "Name": "dessert"
+    
+    "CategoryName": "dessert",
+    "Description": "almost time to go home"
   }
 ]

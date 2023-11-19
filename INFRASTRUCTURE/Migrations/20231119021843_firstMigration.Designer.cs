@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace INFRASTRUCTURE.Migrations
 {
     [DbContext(typeof(BurgerDbContext))]
-    [Migration("20231118222923_firstMigration")]
+    [Migration("20231119021843_firstMigration")]
     partial class firstMigration
     {
         /// <inheritdoc />
@@ -48,13 +48,13 @@ namespace INFRASTRUCTURE.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PdoductName")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("PictureUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProductName")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -67,17 +67,12 @@ namespace INFRASTRUCTURE.Migrations
             modelBuilder.Entity("CORE.Entities.Product", b =>
                 {
                     b.HasOne("CORE.Entities.Category", "Category")
-                        .WithMany("Products")
+                        .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("CORE.Entities.Category", b =>
-                {
-                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

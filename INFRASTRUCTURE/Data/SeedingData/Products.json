@@ -1,125 +1,125 @@
 [
   {
-    "Name": "bacon burger",
+    "ProductName": "bacon burger",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "PictureUrl": "images/products/sb-ang1.png",
     "Price": 200,
     "CategoryId": 1
   },
   {
-    "Name": "cheeseburger",
+    "ProductName": "cheeseburger",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
     "PictureUrl": "images/products/sb-ang2.png",
     "Price": 150,
     "CategoryId": 1
   },
   {
-    "Name": "margherita",
+    "ProductName": "margherita",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "PictureUrl": "images/products/sb-core1.png",
     "Price": 180,
     "CategoryId": 2
   },
   {
-    "Name": "pepperoni",
+    "ProductName": "pepperoni",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "PictureUrl": "images/products/sb-core2.png",
     "Price": 300,
     "CategoryId": 2
   },
   {
-    "Name": "water",
+    "ProductName": "water",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "PictureUrl": "images/products/sb-react1.png",
     "Price": 250,
     "CategoryId": 4
   },
   {
-    "Name": "garlic bread",
+    "ProductName": "garlic bread",
     "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
     "PictureUrl": "images/products/sb-ts1.png",
     "Price": 120,
     "CategoryId": 5
   },
   {
-    "Name": "napoletan",
+    "ProductName": "napoletan",
     "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "PictureUrl": "images/products/hat-core1.png",
-    "Price":10,
+    "Price": 10,
     "CategoryId": 2
   },
   {
-    "Name": "beer",
+    "ProductName": "beer",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "PictureUrl": "images/products/hat-react1.png",
     "Price": 8,
     "CategoryId": 4
   },
   {
-    "Name": "soda",
+    "ProductName": "soda",
     "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "PictureUrl": "images/products/hat-react2.png",
     "Price": 15,
     "CategoryId": 4
   },
   {
-    "Name": "sausage hot dog",
+    "ProductName": "sausage hot dog",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
     "PictureUrl": "images/products/glove-code1.png",
-    "Price":18,
+    "Price": 18,
     "CategoryId": 3
   },
   {
-    "Name": "brazilian hot dog",
+    "ProductName": "brazilian hot dog",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "PictureUrl": "images/products/glove-code2.png",
     "Price": 15,
     "CategoryId": 3
   },
   {
-    "Name": "wine",
+    "ProductName": "wine",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
     "PictureUrl": "images/products/glove-react1.png",
     "Price": 16,
     "CategoryId": 4
   },
   {
-    "Name": "juice",
+    "ProductName": "juice",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "PictureUrl": "images/products/glove-react2.png",
     "Price": 14,
     "CategoryId": 4
   },
   {
-    "Name": "creme brulee",
+    "ProductName": "creme brulee",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "PictureUrl": "images/products/boot-redis1.png",
     "Price": 250,
     "CategoryId": 6
   },
   {
-    "Name": "corn bacon",
+    "ProductName": "corn bacon",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "PictureUrl": "images/products/boot-core2.png",
     "Price": 189,
     "CategoryId": 2
   },
   {
-    "Name": "californian",
+    "ProductName": "californian",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "PictureUrl": "images/products/boot-core1.png",
     "Price": 199,
     "CategoryId": 2
   },
   {
-    "Name": "veggie burger",
+    "ProductName": "veggie burger",
     "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
     "PictureUrl": "images/products/boot-ang2.png",
     "Price": 150,
     "CategoryId": 1
   },
   {
-    "Name": "chicken burger",
+    "ProductName": "chicken burger",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "PictureUrl": "images/products/boot-ang1.png",
     "Price": 180,
