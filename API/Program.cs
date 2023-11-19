@@ -1,3 +1,4 @@
+using CORE.Entities;
 using CORE.Interfaces;
 using INFRASTRUCTURE;
 using INFRASTRUCTURE.Data;
@@ -12,6 +13,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericsRepository<>));
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BurgerDbContext>(options =>
 {
