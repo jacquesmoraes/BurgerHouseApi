@@ -1,127 +1,127 @@
 [
   {
-    "ProductName": "bacon burger",
+    "ProductName": "bacon-burger",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "PictureUrl": "images/products/sb-ang1.png",
+    "PictureUrl": "images/products/bacon-burger.png",
     "Price": 200,
     "CategoryId": 1
   },
   {
     "ProductName": "cheeseburger",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "PictureUrl": "images/products/sb-ang2.png",
+    "PictureUrl": "images/products/cheeseburger.png",
     "Price": 150,
     "CategoryId": 1
   },
   {
     "ProductName": "margherita",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "PictureUrl": "images/products/sb-core1.png",
+    "PictureUrl": "images/products/margherita.png",
     "Price": 180,
     "CategoryId": 2
   },
   {
     "ProductName": "pepperoni",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "PictureUrl": "images/products/sb-core2.png",
+    "PictureUrl": "images/products/pepperoni.png",
     "Price": 300,
     "CategoryId": 2
   },
   {
     "ProductName": "water",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "PictureUrl": "images/products/sb-react1.png",
+    "PictureUrl": "images/products/water.png",
     "Price": 250,
     "CategoryId": 4
   },
   {
-    "ProductName": "garlic bread",
+    "ProductName": "garlic-bread",
     "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "PictureUrl": "images/products/sb-ts1.png",
+    "PictureUrl": "images/products/garlic-bread.png",
     "Price": 120,
     "CategoryId": 5
   },
   {
     "ProductName": "napoletan",
     "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "PictureUrl": "images/products/hat-core1.png",
+    "PictureUrl": "images/products/napoletan.png",
     "Price": 10,
     "CategoryId": 2
   },
   {
     "ProductName": "beer",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "PictureUrl": "images/products/hat-react1.png",
+    "PictureUrl": "images/products/beer.png",
     "Price": 8,
     "CategoryId": 4
   },
   {
     "ProductName": "soda",
     "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "PictureUrl": "images/products/hat-react2.png",
+    "PictureUrl": "images/products/soda.png",
     "Price": 15,
     "CategoryId": 4
   },
   {
-    "ProductName": "sausage hot dog",
+    "ProductName": "sausage-hot-dog",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "PictureUrl": "images/products/glove-code1.png",
+    "PictureUrl": "images/products/sausage-hot-dog.png",
     "Price": 18,
     "CategoryId": 3
   },
   {
-    "ProductName": "brazilian hot dog",
+    "ProductName": "brazilian-hot-dog",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "PictureUrl": "images/products/glove-code2.png",
+    "PictureUrl": "images/products/brazilian-hot-dog.png",
     "Price": 15,
     "CategoryId": 3
   },
   {
     "ProductName": "wine",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "PictureUrl": "images/products/glove-react1.png",
+    "PictureUrl": "images/products/wine.png",
     "Price": 16,
     "CategoryId": 4
   },
   {
     "ProductName": "juice",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "PictureUrl": "images/products/glove-react2.png",
+    "PictureUrl": "images/products/juice.png",
     "Price": 14,
     "CategoryId": 4
   },
   {
-    "ProductName": "creme brulee",
+    "ProductName": "creme-brulee",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "PictureUrl": "images/products/boot-redis1.png",
+    "PictureUrl": "images/products/creme-brulee.png",
     "Price": 250,
     "CategoryId": 6
   },
   {
-    "ProductName": "corn bacon",
+    "ProductName": "corn-bacon",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "PictureUrl": "images/products/boot-core2.png",
+    "PictureUrl": "images/products/corn-bacon.png",
     "Price": 189,
     "CategoryId": 2
   },
   {
     "ProductName": "californian",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "PictureUrl": "images/products/boot-core1.png",
+    "PictureUrl": "images/products/californian.png",
     "Price": 199,
     "CategoryId": 2
   },
   {
-    "ProductName": "veggie burger",
+    "ProductName": "veggie-burger",
     "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "PictureUrl": "images/products/boot-ang2.png",
+    "PictureUrl": "images/products/veggie-burger.png",
     "Price": 150,
     "CategoryId": 1
   },
   {
-    "ProductName": "chicken burger",
+    "ProductName": "chicken-burger",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "PictureUrl": "images/products/boot-ang1.png",
+    "PictureUrl": "images/products/chicken-burger.png",
     "Price": 180,
     "CategoryId": 1
   }
