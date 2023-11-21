@@ -10,7 +10,7 @@ namespace CORE.Specifications
 {
     public class ProductsWithCategoriesSpecifications : BaseSpecification<Product>
     {
-        public ProductsWithCategoriesSpecifications() 
+        public ProductsWithCategoriesSpecifications(int? categoryId) : base (x => x.CategoryId == categoryId ) 
         {
             AddIncludes(x => x.Category);
         }
