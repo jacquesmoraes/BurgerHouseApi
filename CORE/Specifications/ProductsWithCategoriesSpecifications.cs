@@ -10,9 +10,10 @@ namespace CORE.Specifications
 {
     public class ProductsWithCategoriesSpecifications : BaseSpecification<Product>
     {
-        public ProductsWithCategoriesSpecifications(int? categoryId) : base (x => x.CategoryId == categoryId ) 
+        public ProductsWithCategoriesSpecifications(ProductSpecParams productParams) : base (x =>(!productParams.CategoryId.HasValue || x.CategoryId == productParams.CategoryId ))
         {
             AddIncludes(x => x.Category);
+            ApplyPaging(productParams.PageSize * (productParams.PageIndex- 1) , productParams.PageSize);
         }
 
         public ProductsWithCategoriesSpecifications(int id) : base(x => x.Id == id)

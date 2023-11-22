@@ -20,10 +20,21 @@ namespace CORE.Specifications
 
         public List<Expression<Func<T, object>>> Includes { get; } = new List<Expression<Func<T, object>>>();
 
+        public int Take { get; private set; }
+
+        public int Skip { get; private set; }
+
+        public bool IsPagingEnable { get; private set; }
+
         protected void AddIncludes(Expression<Func<T, object>> includeExpression)
         {
             Includes.Add(includeExpression);
         }
-
+        protected void ApplyPaging(int skip, int take)
+        {
+            Skip= skip;
+            Take= take;
+            IsPagingEnable= true;
+        }
     }
 }
