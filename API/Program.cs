@@ -1,9 +1,8 @@
-using CORE.Entities;
+
 using CORE.Interfaces;
 using INFRASTRUCTURE;
 using INFRASTRUCTURE.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +15,13 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericsRepository<>));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", policy =>
+    {
+        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+    });
+});
 builder.Services.AddDbContext<BurgerDbContext>(options =>
 {
 options.UseSqlite(builder.Configuration.GetConnectionString("defaultConnection") ?? throw new InvalidOperationException("connection string not found"));
@@ -33,6 +39,7 @@ if (app.Environment.IsDevelopment())
 
 
 app.UseStaticFiles();
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
