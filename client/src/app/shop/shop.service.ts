@@ -18,6 +18,7 @@ export class ShopService {
     if(ShopParams.categoryId > 0) params = params.append('categoryId', ShopParams.categoryId);
     params = params.append('pageIndex', ShopParams.pageIndex);
     params = params.append('pageSize', ShopParams.pageSize);
+    if(ShopParams.search) params = params.append('search', ShopParams.search);
     return this.http.get<Pagination<Product[]>>(this.baseUrl + 'products', {params});
   }
 

@@ -21,12 +21,13 @@
         [pageIndex]="shopParams.pageIndex"
         [pageSize]="shopParams.pageSize"
         ></app-paging-header>
-        <div class="d-flex mt-2">
-          
-          <input type="text" placeholder="search" class="form-control me-2">
-          <button class="btn btn-outline-primary mx2">search</button>
-          <button class="btn btn-outline-success ">reset</button>
+        
+        <div class="d-flex">
+          <input (keyup.enter)="onSearch()" class="form-control me-2" type="text" placeholder="Search" #search>
+          <button (click)="onSearch()" class="btn btn-outline-success" >Search</button>
+          <button (click)="onReset()" class="btn btn-outline-info ms-2">reset</button>
         </div>
+
       </div>
       <div class="row row-cols-3 g-3">
         <div class="col" *ngFor="let product of products">
