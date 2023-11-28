@@ -11,6 +11,7 @@ import { Category } from '../shared/models/category';
 export class ShopComponent implements OnInit{
 products : Product[] = [];
 categories: Category[] = [];
+categoryIdSelected = 0;
 
 constructor(private shopService : ShopService){}
 
@@ -19,16 +20,21 @@ constructor(private shopService : ShopService){}
    this.getCategories();
   }
 getProducts(){
-  this.shopService.getProducts().subscribe({
+  this.shopService.getProducts(this.categoryIdSelected).subscribe({
     next: response => this.products = response.data,
     error: error => console.log(error)
   })
 }
 getCategories(){
   this.shopService.getCategories().subscribe({
-    next: response => this.categories = response,
+    next: response => this.categories = [{id: 0, categoryName:'all'}, ...response],
     error: error => console.log(error)
   })
+}
+
+onCategorySelected(categoryId: number){
+  this.categoryIdSelected = categoryId;
+  this.getProducts();
 }
 
 }
