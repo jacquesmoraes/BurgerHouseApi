@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../shared/models/product';
 import { ShopService } from './shop.service';
 import { Category } from '../shared/models/category';
+import { ShopParams } from '../shared/models/shopParams';
 
 @Component({
   selector: 'app-shop',
@@ -11,7 +12,8 @@ import { Category } from '../shared/models/category';
 export class ShopComponent implements OnInit{
 products : Product[] = [];
 categories: Category[] = [];
-categoryIdSelected = 0;
+shopParams = new ShopParams();
+totalCount = 0;
 
 constructor(private shopService : ShopService){}
 
@@ -20,8 +22,13 @@ constructor(private shopService : ShopService){}
    this.getCategories();
   }
 getProducts(){
-  this.shopService.getProducts(this.categoryIdSelected).subscribe({
-    next: response => this.products = response.data,
+  this.shopService.getProducts(this.shopParams).subscribe({
+    next: response => {
+      this.products = response.data,
+      this.shopParams.pageIndex = response.pageIndex,
+      this.shopParams.pageSize = response.pageSize,
+      this.totalCount = response.count
+    },
     error: error => console.log(error)
   })
 }
@@ -33,8 +40,16 @@ getCategories(){
 }
 
 onCategorySelected(categoryId: number){
-  this.categoryIdSelected = categoryId;
+  this.shopParams.categoryId = categoryId;
   this.getProducts();
+}
+
+onPageChanged(event: any){
+  if(this.shopParams.pageIndex !== event.page){
+    this.shopParams.pageIndex = event.page;
+    this.getProducts();
+  }
+
 }
 
 }
