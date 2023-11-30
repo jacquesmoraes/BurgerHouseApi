@@ -25,4 +25,10 @@ export class ShopService {
   getCategories(){
     return this.http.get<Category[]>(this.baseUrl + 'products/categories');
   }
+
+  getProduct(id: number){
+    return this.http.get<Product>(this.baseUrl + 'products/' + id);
+
+  }
+
 }

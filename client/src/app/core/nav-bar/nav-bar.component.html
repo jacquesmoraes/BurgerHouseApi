@@ -1,14 +1,14 @@
 <header class="d-flex flex-row  align-items-center p-3 px-4 fixed-top justify-content-lg-between 
 border-bottom bg-dark bg-gradient ">
-<img src="../../assets/img/logo.jpg" alt="logo" style="max-height: 80px;">
-  <nav  class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    <a class="me-3 py-2 text-light text-decoration-none active" >Home</a>
-    <a class="me-3 py-2 text-light text-decoration-none" href="">About</a>
-    <a class="me-3 py-2 text-light text-decoration-none" href="#">Menu</a>
-    <a class="me-3 py-2 text-light text-decoration-none" href="#">Specials</a>
-    <a class="me-3 py-2 text-light text-decoration-none" href="#">Events</a>
-    <a class="me-3 py-2 text-light text-decoration-none" href="#">Contact</a>
-    <a  class="me-3 py-2 text-light text-decoration-none" href="#book-a-table">Book a table</a>
+<img src="../../assets/img/logo.jpg" alt="logo" style="max-height: 80px;" routerLink="/" >
+  <nav  class="d-inline-flex mt-2 mt-md-0 ms-md-auto ">
+    <a  class="me-3 py-2  " routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >Home</a>
+    <a class="me-3 py-2 " routerLinkActive="active">About</a>
+    <a class="me-3 py-2 " routerLink="/shop" routerLinkActive="active" >Menu</a>
+    <a class="me-3 py-2  " routerLink="/"  >Specials</a>
+    <a class="me-3 py-2 "routerLink="/" >Events</a>
+    <a class="me-3 py-2  " routerLink="/" >Contact</a>
+    <a  class="me-3 py-2 " routerLink="/" >Book a table</a>
   </nav><!-- .navbar -->
   <div class="menu">
     <a style="position: relative;">

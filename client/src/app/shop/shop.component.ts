@@ -43,7 +43,7 @@ getCategories(){
 
 onCategorySelected(categoryId: number){
   this.shopParams.categoryId = categoryId;
- 
+ this.shopParams.pageIndex =1;
   this.getProducts();
 }
 
@@ -56,6 +56,7 @@ onPageChanged(event: any){
 
 onSearch(){
   this.shopParams.search = this.searchTerm?.nativeElement.value;
+  this.shopParams.pageIndex =1;
   this.getProducts();
 }
 onReset(){
