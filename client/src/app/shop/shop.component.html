@@ -6,7 +6,7 @@
 
       <h5 class="text-warning ms-3">Category</h5>
       <ul class="list-group my-3">
-        <li class="list-group-item active" *ngFor="let category of categories"
+        <li class="list-group-item active pointer" *ngFor="let category of categories"
           [class.active]="category.id == shopParams.categoryId" [value]="category.id"
           (click)="onCategorySelected(category.id)">
           {{category.categoryName}}
